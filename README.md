@@ -29,6 +29,8 @@ pip install pandas
 
 ## To obtain the data, do the following:
 
+with the figshare link, download the data files and then(the data files are to be uploaded to figshare)
+
 1. you should put 'feature_result' folder as 'envchemGNN/model/feature-based/result_1', while 'feature_result_stand_scaler' folder as 'envchemGNN/model/feature-based/result_stand_scaler_1'
 
 2. you should put 'data' folder as 'envchemGNN/data'
