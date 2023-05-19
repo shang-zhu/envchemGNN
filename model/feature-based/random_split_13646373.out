@@ -1,0 +1,263 @@
+Job started on v024.ib.bridges2.psc.edu at Tue Dec 13 17:54:40 EST 2022
+MACCS features generated at data/maccs/feat.npy
+ECFP features generated at data/ecfp/feat.npy
+Mordred 2D features generated at data/mordred/feat.npy
+this task is on regression of ESOL
+loading ecfp features successfully!
+loading maccs features successfully!
+loading mordred features successfully!
+loading dataframe successfully!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - rf :
+MAE 1.19E+00 +/- 5.69E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - svm :
+MAE 1.96E+00 +/- 9.53E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - gb :
+MAE 1.30E+00 +/- 5.48E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - nn :
+MAE 1.29E+00 +/- 4.81E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - nn-pca :
+MAE 1.33E+00 +/- 2.85E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - rf :
+MAE 1.04E+00 +/- 8.39E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - svm :
+MAE 1.29E+00 +/- 7.02E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - gb :
+MAE 1.05E+00 +/- 6.59E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - nn :
+MAE 1.09E+00 +/- 1.02E-01
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - nn-pca :
+MAE 1.10E+00 +/- 7.27E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - rf :
+MAE 6.37E-01 +/- 6.25E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - svm :
+MAE 2.07E+00 +/- 1.12E-01
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - gb :
+MAE 6.13E-01 +/- 4.18E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - nn :
+MAE 7.80E+01 +/- 5.93E+01
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - nn-pca :
+MAE 1.28E+02 +/- 5.72E+01
+MACCS features generated at data/maccs/feat.npy
+ECFP features generated at data/ecfp/feat.npy
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+Mordred 2D features generated at data/mordred/feat.npy
+this task is on regression of BCF
+loading ecfp features successfully!
+loading maccs features successfully!
+loading mordred features successfully!
+loading dataframe successfully!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - rf :
+MAE 8.57E-01 +/- 4.13E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - svm :
+MAE 1.24E+00 +/- 7.88E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - gb :
+MAE 9.12E-01 +/- 5.26E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - nn :
+MAE 9.73E-01 +/- 4.82E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - nn-pca :
+MAE 9.42E-01 +/- 6.15E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - rf :
+MAE 8.10E-01 +/- 7.16E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - svm :
+MAE 8.91E-01 +/- 3.86E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - gb :
+MAE 8.01E-01 +/- 4.13E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - nn :
+MAE 8.65E-01 +/- 4.66E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - nn-pca :
+MAE 8.80E-01 +/- 2.68E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - rf :
+MAE 6.75E-01 +/- 4.95E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - svm :
+MAE 1.36E+00 +/- 9.10E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - gb :
+MAE 6.70E-01 +/- 4.99E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - nn :
+MAE 5.08E+01 +/- 4.84E+01
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - nn-pca :
+MAE 2.71E+02 +/- 6.62E+01
+MACCS features generated at data/maccs/feat.npy
+ECFP features generated at data/ecfp/feat.npy
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+Mordred 2D features generated at data/mordred/feat.npy
+this task is on regression of Clint
+loading ecfp features successfully!
+loading maccs features successfully!
+loading mordred features successfully!
+loading dataframe successfully!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - rf :
+MAE 1.06E+00 +/- 3.35E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - svm :
+MAE 1.67E+00 +/- 5.89E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - gb :
+MAE 1.42E+00 +/- 2.80E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - nn :
+MAE 9.14E-01 +/- 9.34E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - nn-pca :
+MAE 1.41E+00 +/- 2.99E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - rf :
+MAE 9.89E-01 +/- 3.86E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - svm :
+MAE 1.66E+00 +/- 6.25E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - gb :
+MAE 1.51E+00 +/- 4.45E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - nn :
+MAE 1.33E+00 +/- 1.19E-01
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - nn-pca :
+MAE 1.40E+00 +/- 9.01E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - rf :
+MAE 8.63E-01 +/- 4.77E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - svm :
+MAE 1.39E+00 +/- 6.18E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - gb :
+MAE 1.16E+00 +/- 5.22E-02
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - nn :
+MAE 5.64E+03 +/- 6.68E+03
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - nn-pca :
+MAE 5.69E+03 +/- 5.76E+03
+ 
+Job Ended at Tue Dec 13 18:43:44 EST 2022

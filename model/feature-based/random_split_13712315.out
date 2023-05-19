@@ -1,0 +1,313 @@
+Job started on v014.ib.bridges2.psc.edu at Thu Dec 15 11:30:20 EST 2022
+MACCS features generated at data/maccs/feat.npy
+ECFP features generated at data/ecfp/feat.npy
+Mordred 2D features generated at data/mordred/feat.npy
+this task is on regression of ESOL
+loading ecfp features successfully!
+loading maccs features successfully!
+loading mordred features successfully!
+loading dataframe successfully!
+The result directory is created!
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - rf :
+MAE 1.18E+00 +/- 6.56E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - svm :
+MAE 1.59E+00 +/- 8.32E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - gb :
+MAE 1.30E+00 +/- 5.49E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - nn :
+MAE 2.01E+00 +/- 1.26E-01
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - nn-pca :
+MAE 2.01E+00 +/- 2.27E-01
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - rf :
+MAE 1.03E+00 +/- 7.99E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - svm :
+MAE 1.10E+00 +/- 7.66E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - gb :
+MAE 1.05E+00 +/- 6.68E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - nn :
+MAE 1.09E+00 +/- 6.38E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - nn-pca :
+MAE 1.20E+00 +/- 8.33E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - rf :
+MAE 6.40E-01 +/- 6.47E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - svm :
+MAE 6.90E-01 +/- 2.53E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - gb :
+MAE 6.16E-01 +/- 4.28E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - nn :
+MAE 7.55E-01 +/- 1.23E-01
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - nn-pca :
+MAE 9.69E-01 +/- 1.00E-01
+MACCS features generated at data/maccs/feat.npy
+ECFP features generated at data/ecfp/feat.npy
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+Mordred 2D features generated at data/mordred/feat.npy
+this task is on regression of BCF
+loading ecfp features successfully!
+loading maccs features successfully!
+loading mordred features successfully!
+loading dataframe successfully!
+The result directory is created!
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - rf :
+MAE 8.51E-01 +/- 4.46E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - svm :
+MAE 9.85E-01 +/- 5.83E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - gb :
+MAE 9.12E-01 +/- 5.25E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - nn :
+MAE 1.95E+00 +/- 7.20E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - nn-pca :
+MAE 1.29E+00 +/- 5.12E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - rf :
+MAE 8.09E-01 +/- 6.60E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - svm :
+MAE 8.25E-01 +/- 3.47E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - gb :
+MAE 8.01E-01 +/- 4.16E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - nn :
+MAE 9.32E-01 +/- 3.55E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - nn-pca :
+MAE 9.17E-01 +/- 6.05E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - rf :
+MAE 6.73E-01 +/- 5.82E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - svm :
+MAE 6.92E-01 +/- 4.25E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - gb :
+MAE 6.70E-01 +/- 4.89E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - nn :
+MAE 8.64E-01 +/- 9.01E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - nn-pca :
+MAE 1.02E+00 +/- 1.13E-01
+MACCS features generated at data/maccs/feat.npy
+ECFP features generated at data/ecfp/feat.npy
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/ocean/projects/civ210001p/shang9/miniconda3/envs/ml_env/lib/python3.6/site-packages/numpy/core/fromnumeric.py:87: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+Mordred 2D features generated at data/mordred/feat.npy
+this task is on regression of Clint
+loading ecfp features successfully!
+loading maccs features successfully!
+loading mordred features successfully!
+loading dataframe successfully!
+The result directory is created!
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - rf :
+MAE 1.06E+00 +/- 2.54E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - svm :
+MAE 1.34E+00 +/- 6.51E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - gb :
+MAE 1.42E+00 +/- 2.82E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - nn :
+MAE 1.04E+00 +/- 3.25E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - ecfp, Model - nn-pca :
+MAE 1.52E+00 +/- 6.29E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - rf :
+MAE 9.84E-01 +/- 4.31E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - svm :
+MAE 1.48E+00 +/- 5.77E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - gb :
+MAE 1.51E+00 +/- 4.46E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - nn :
+MAE 1.30E+00 +/- 9.43E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - maccs, Model - nn-pca :
+MAE 1.40E+00 +/- 1.07E-01
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - rf :
+MAE 8.66E-01 +/- 5.34E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - svm :
+MAE 1.44E+00 +/- 6.30E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - gb :
+MAE 1.16E+00 +/- 4.89E-02
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - nn :
+MAE 1.29E+00 +/- 4.28E-01
+standard scaler is applied!
+column number: []
+start kfold_validation
+Regression on label, Feature - mordred, Model - nn-pca :
+MAE 1.29E+00 +/- 1.45E-01
+ 
+Job Ended at Thu Dec 15 12:18:07 EST 2022

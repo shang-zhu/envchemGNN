@@ -1,0 +1,30 @@
+2023-04-09 14:55:19.027300: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-09 14:55:29.995405: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2023-04-09 14:55:29.995956: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-04-09 14:55:58.191668: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-04-09 14:55:58.192066: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-04-09 14:55:58.192089: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+/ocean/projects/cts180021p/shang9/miniconda/miniconda3/envs/ml_echem/lib/python3.7/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: libc10_cuda.so: cannot open shared object file: No such file or directory
+  warn(f"Failed to load image Python extension: {e}")
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+[14:57:12] WARNING: not removing hydrogen atom without neighbors
+2023-04-09 14:57:12.975271: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2023-04-09 14:57:13.004393: W tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:265] failed call to cuInit: UNKNOWN ERROR (303)
+2023-04-09 14:57:13.004760: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (r010.ib.bridges2.psc.edu): /proc/driver/nvidia/version does not exist
+2023-04-09 14:57:13.056664: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[14:57:58] WARNING: not removing hydrogen atom without neighbors
+[14:58:47] WARNING: not removing hydrogen atom without neighbors
+[14:59:27] WARNING: not removing hydrogen atom without neighbors
+[15:00:00] WARNING: not removing hydrogen atom without neighbors
+[15:00:35] WARNING: not removing hydrogen atom without neighbors
+[15:01:17] WARNING: not removing hydrogen atom without neighbors
+[15:02:09] WARNING: not removing hydrogen atom without neighbors
+[15:02:43] WARNING: not removing hydrogen atom without neighbors
+[15:03:21] WARNING: not removing hydrogen atom without neighbors
+[15:04:10] WARNING: not removing hydrogen atom without neighbors
+[15:04:45] WARNING: not removing hydrogen atom without neighbors
+[15:05:18] WARNING: not removing hydrogen atom without neighbors
+[15:05:54] WARNING: not removing hydrogen atom without neighbors
+[15:06:42] WARNING: not removing hydrogen atom without neighbors
