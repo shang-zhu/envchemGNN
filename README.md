@@ -4,7 +4,6 @@ This is the official repository for manuscript 'Improved Environmental Chemistry
 
 The implementation of NeuralFP is from deepchem and the implementation of OGNN is from [this repo](https://github.com/O-GNN/O-GNN).
 
-
 ## Getting Started
 
 ### Installation
@@ -17,9 +16,6 @@ conda activate ml_echem
 #install packages for model training
 pip install -U scikit-learn 
 conda install -c rdkit -c mordred-descriptor mordred
-conda install pyg -c pyg
-pip install deepchem[tensorflow]
-
 #other packages for data analysis
 pip install pandas matplotlib
 ```
