@@ -2,7 +2,7 @@
 
 This is the official repository for manuscript 'Improved Environmental Chemistry Property Prediction of Molecules with Graph Machine Learning'.
 
-The implementation of NeuralFP is from deepchem and the implementation of OGNN is from [this repo](https://github.com/O-GNN/O-GNN).
+The implementation of NeuralFP is from [deepchem](https://deepchem.io/) and the implementation of OGNN is from [this repo](https://github.com/O-GNN/O-GNN).
 
 ## Getting Started
 
