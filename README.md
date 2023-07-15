@@ -1,35 +1,26 @@
 # envchemGNN
 
-This is the repository for manuscript 'Improved Environmental Chemistry Property Prediction of Molecules with Graph Machine Learning'. full code will be coming soon.
+This is the official repository for manuscript 'Improved Environmental Chemistry Property Prediction of Molecules with Graph Machine Learning'.
 
 The implementation of NeuralFP is from deepchem and the implementation of OGNN is from [this repo](https://github.com/O-GNN/O-GNN).
 
-## To install all necessary packages
+## Getting Started
+
+### Installation
 
 ```
+#create conda environment
 conda create --name ml_echem python=3.7
 conda activate ml_echem
-pip install matplotlib
+
+#install packages for model training
 pip install -U scikit-learn 
 conda install -c rdkit -c mordred-descriptor mordred
-
-#deepchem for neuralFP
-pip install deepchem[tensorflow]
-pip install deepchem[torch]
-
-#ognn
-conda install pyg -c pyg
-
-#for data analysis
-pip install pandas
+#other packages for data analysis
+pip install pandas matplotlib
 ```
 
-
-
-
-## To obtain the data, do the following:
-
-with the figshare link, download the data files and then(the data files are to be uploaded to figshare)
+### Dataset
 
 1. you should put 'feature_result' folder as 'envchemGNN/model/feature-based/result_1', while 'feature_result_stand_scaler' folder as 'envchemGNN/model/feature-based/result_stand_scaler_1'
 
@@ -39,3 +30,10 @@ with the figshare link, download the data files and then(the data files are to b
 
 4. you should put 'ognn_result' folder as 'envchemGNN/model/o-gnn/result', while 'ognn_graph_features' folder as 'envchemGNN/model/o-gnn/graph_features'
 
+### Train a feature-based model
+
+### Train a neuralFP model
+
+### Train a O-GNN model
+
+### Train a O-GNN model
