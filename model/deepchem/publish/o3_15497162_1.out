@@ -1,4 +1,0 @@
-Job started on r180.ib.bridges2.psc.edu at Mon Apr 10 09:20:28 EDT 2023
-Namespace(data_path='/ocean/projects/cts180021p/shang9/molecules/pretrainLCA/finalized/data/o_gnn_input/O3_react/raw/data.csv', dense=1, dropout=0, folder_idx=1, layer=0, split_folder='/ocean/projects/cts180021p/shang9/molecules/pretrainLCA/finalized/model/feature-based/result_1/O3_react/')
- 
-Job Ended at Mon Apr 10 09:22:16 EDT 2023

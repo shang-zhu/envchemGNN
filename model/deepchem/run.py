@@ -35,7 +35,7 @@ def get_split_idx_from_file(split_folder, kfold_idx):
     test_idx=txt2list(test_txt)
     return train_idx, valid_idx, test_idx
 
-parser = argparse.ArgumentParser(description="DeepChem Baseline Models for green chem")
+parser = argparse.ArgumentParser(description="NeuralFP model implemented by DeepChem")
 parser.add_argument("--folder_idx", type=int, required=True)
 parser.add_argument("--data_path", type=str, required=True)
 parser.add_argument("--split_folder", type=str, required=True)
@@ -49,7 +49,7 @@ print(args)
 seed=args.folder_idx
 data_path=args.data_path
 folder_path=args.split_folder
-save_folder='result/'+folder_path.split('/')[-2]+'/'
+save_folder=folder_path #this line is modified
 layer_id=args.layer
 dense_id=args.dense
 dropout_id=args.dropout
@@ -72,6 +72,7 @@ if not os.path.exists(save_folder):
        pass
 reproduce(seed)
 
+#follow the same split as the feature-based models
 if args.split_folder!='':
         full_train_idx, _, test_idx=get_split_idx_from_file(folder_path, seed)
 else:
@@ -84,15 +85,12 @@ kf = KFold(n_splits= k, shuffle=True, random_state=1)
 k_idx=0
 for train_idx, val_idx in kf.split(full_train_idx):
     print('kfold index:', k_idx)
-    # print('training-validation-testing split index:', train_idx, val_idx, test_idx)
     loader = dc.data.CSVLoader(['label'], feature_field="SMILES",
             featurizer=dc.feat.ConvMolFeaturizer())
     data = loader.create_dataset(data_path)
     splitter = dc.splits.SpecifiedSplitter(valid_indices=val_idx, test_indices=test_idx)
     train_data, val_data, test_data =splitter.train_valid_test_split(data)
     np.save(save_folder+'test_'+str(seed)+'.npy', test_data.y)
-
-    # print(train_data, val_data, test_data)
 
     n_tasks = 1
     nepochs=100

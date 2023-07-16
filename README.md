@@ -27,8 +27,8 @@ cd envchemGNN
 
 ### Dataset
 
-Curated datasets can be found at (figshare?): need to check the data policy
-1. folder structures:
+Curated datasets can be found at 'envchemGNN/data': need to check the data policy
+folder structures:
 ```
 data
 -random_split
@@ -41,27 +41,45 @@ data
 -lc
 --'BCF_1_N.csv': 1/N randomly sampled data from 'BCF.csv' for learning curve
 --'Clint_1_N.csv': 1/N randomly sampled data from 'Clint.csv' for learning curve
-```
-
-2. Put 'data' folder at 'envchemGNN/data' 
+``` 
 
 ### Train a feature-based model
+
+1. run the following commands in your terminal
 ```
 data_path='your_local_dir/envchemGNN/data/'
 result_path='your_local_dir/envchemGNN/result/'
 csv_name='ESOL' # other tasks: 'BCF' 'Clint'
+
 #create features
 python data.py --input_path $data_path'model_input/random_split/'$csv_name'.csv' \
         --output_path $data_path'features/'$csv_name'/'
+
 #train models (random split)
 python run.py --feat_path $data_path'features/'$csv_name'/' \
     --label_path $data_path'model_input/random_split/'$csv_name'.csv' --label_name 'label' \
     --task 'regression' --metric 'RMSE' --save_model --result_path $result_path
 ```
 
+2. The testing results are saved at $result_path/feature_result/$csv_name/summary_kfold.csv for further analysis
+
 ### Train a neuralFP model
 
-### Train a O-GNN model
+1. run the following commands in your terminal
+```
+result_path='your_local_dir/envchemGNN/result/'
+data_path='your_local_dir/envchemGNN/data/'
+task='ESOL'
+split_id=0 # will run id=1,2,3,4 for cross validation
+
+python run.py --folder_idx $split_id --data_path $data_path'model_input/random_split/'$task'.csv' 
+        --split_folder $result_path$task'NeuralFP/' --dense 1 --dropout 0 --layer 1
+```
+2. prediction results are saved at (5 files from an ensemble of 5 models): 
+```$result_path$task'NeuralFP/test_pred_'+str(split_id)+'_'+[0-4]+'.npy'```
+with true labels
+```$result_path$task'NeuralFP/test_'+str(split_id)+'.npy'```.
+Then you can average the prediction of model ensembles and compare the predictions with true labels, get RMSE or other metrics.
 
 ### Train a O-GNN model
 
