@@ -10,8 +10,8 @@ The implementation of NeuralFP is from [DeepChem](https://deepchem.io/) and the 
 
 ```
 #create conda environment
-conda create --name ml_echem python=3.7
-conda activate ml_echem
+conda create --name ecgnn python=3.7
+conda activate ecgnn
 
 #install packages for model training
 pip install -U scikit-learn 
