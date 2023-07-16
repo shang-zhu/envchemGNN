@@ -27,7 +27,7 @@ cd envchemGNN
 
 ### Dataset
 
-Curated datasets can be found at (figshare?)
+Curated datasets can be found at (figshare?): need to check the data policy
 1. folder structures:
 ```
 data
@@ -46,6 +46,18 @@ data
 2. Put 'data' folder at 'envchemGNN/data' 
 
 ### Train a feature-based model
+```
+data_path='your_local_dir/envchemGNN/data/'
+result_path='your_local_dir/envchemGNN/result/'
+csv_name='ESOL' # other tasks: 'BCF' 'Clint'
+#create features
+python data.py --input_path $data_path'model_input/random_split/'$csv_name'.csv' \
+        --output_path $data_path'features/'$csv_name'/'
+#train models (random split)
+python run.py --feat_path $data_path'features/'$csv_name'/' \
+    --label_path $data_path'model_input/random_split/'$csv_name'.csv' --label_name 'label' \
+    --task 'regression' --metric 'RMSE' --save_model --result_path $result_path
+```
 
 ### Train a neuralFP model
 
