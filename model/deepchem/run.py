@@ -49,7 +49,7 @@ print(args)
 seed=args.folder_idx
 data_path=args.data_path
 folder_path=args.split_folder
-save_folder=folder_path #this line is modified
+save_folder=folder_path+'NeuralFP/' #this line is modified
 layer_id=args.layer
 dense_id=args.dense
 dropout_id=args.dropout

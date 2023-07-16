@@ -73,7 +73,7 @@ task='ESOL'
 split_id=0 # will run id=1,2,3,4 for cross validation
 
 python run.py --folder_idx $split_id --data_path $data_path'model_input/random_split/'$task'.csv' 
-        --split_folder $result_path$task'NeuralFP/' --dense 1 --dropout 0 --layer 1
+        --split_folder $result_path$task --dense 1 --dropout 0 --layer 1
 ```
 2. prediction results are saved at (5 files from an ensemble of 5 models): 
 ```$result_path$task'NeuralFP/test_pred_'+str(split_id)+'_'+[0-4]+'.npy'```
@@ -81,7 +81,54 @@ with true labels
 ```$result_path$task'NeuralFP/test_'+str(split_id)+'.npy'```.
 Then you can average the prediction of model ensembles and compare the predictions with true labels, get RMSE or other metrics.
 
+3. optimized hyperparameters for other tasks:
+
 ### Train a O-GNN model
+1. run the following command in your terminal
+```
+result_path='your_local_dir/envchemGNN/result/'
+data_path='your_local_dir/envchemGNN/data/o_gnn_input/'
+task='Clint'
+split_id=0 # will run id=1,2,3,4 for cross validation
+N_epoch=200 #400 for BCF and SO4
+
+python main_dg_regress.py --random_seed 15213 \
+        --input_path $data_path \
+        --input_csv_name $task --gnn 'dualgraph2' \
+        --save-test True \
+        --batch-size 32 \
+        --dropout 0.0 --pooler-dropout 0.0 \
+        --init-face --use-bn --epochs $N_epoch --num-layers 5 --lr 0.0003 \
+        --weight-decay 0.1 --beta2 0.999 --num-workers 1 \
+        --mlp-hidden-size 256 --lr-warmup \
+        --use-adamw --node-attn --period 25 \
+        --split_folder $result_path$task \
+        --kfold_idx $split_id
+```
+2.  prediction results are saved at : 
+```$result_path$task'OGNN/preds_'+str(split_id)+'.csv'```
+which has 6 columns, including y_true (true labels) and y_pred_[0-4] from an esemble of 5 models.
+Then you can average the prediction of model ensembles and compare the predictions with true labels, get RMSE or other metrics.
+
+3. Extract the features after graph pooling layer:
+```
+result_path='your_local_dir/envchemGNN/result/'
+data_path='your_local_dir/envchemGNN/data/o_gnn_input/'
+task='Clint'
+model_path=$result_path$task'OGNN/model_k4_n0.pt'
+
+#in the get_feature.py we set ddi=True in order to extract graph features
+python get_feature.py --random_seed 15213 \
+        --input_path $data_path \
+        --input_csv_name $task --gnn 'dualgraph2' \
+        --save-test True \
+        --batch-size 32 \
+        --dropout 0.0 --pooler-dropout 0.0 \
+        --init-face --use-bn --num-layers 5 --lr 0.0003 \
+        --weight-decay 0.1 --beta2 0.999 --num-workers 1 \
+        --mlp-hidden-size 256 --lr-warmup \
+        --use-adamw --node-attn --period 25 --checkpoint-dir $model_path
+```
 
 ## Acknowledgement
 
