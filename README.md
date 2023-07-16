@@ -38,6 +38,7 @@ data
 -given_split
 --'O3_react.csv': Reactivity
 --'SO4_react.csv': Reactivity
+-o_gnn_input: input files for ognn model
 -lc
 --'BCF_1_N.csv': 1/N randomly sampled data from 'BCF.csv' for learning curve
 --'Clint_1_N.csv': 1/N randomly sampled data from 'Clint.csv' for learning curve
