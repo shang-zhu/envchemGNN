@@ -10,8 +10,8 @@ The implementation of NeuralFP is from [DeepChem](https://deepchem.io/) and the 
 
 ```
 #create conda environment
-conda create --name ml_echem python=3.7
-conda activate ml_echem
+conda create --name ecgnn python=3.7
+conda activate ecgnn
 
 #install packages for model training
 pip install -U scikit-learn 
@@ -38,6 +38,7 @@ data
 -given_split
 --'O3_react.csv': Reactivity
 --'SO4_react.csv': Reactivity
+-o_gnn_input: input files for ognn model
 -lc
 --'BCF_1_N.csv': 1/N randomly sampled data from 'BCF.csv' for learning curve
 --'Clint_1_N.csv': 1/N randomly sampled data from 'Clint.csv' for learning curve
