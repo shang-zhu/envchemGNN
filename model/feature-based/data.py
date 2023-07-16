@@ -13,6 +13,6 @@ feat_dir=args.output_path
 if not os.path.exists(feat_dir):
     os.makedirs(feat_dir)
     
-#'grover' 'dvmp' features are left for a future study
+#'grover', 'dvmp', features extracted from a pretrained model are left for a future study
 for feat_type in ['maccs', 'ecfp','mordred']:
     smi2feat(label_csv, feat_dir, feat_type=feat_type)

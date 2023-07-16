@@ -1,0 +1,212 @@
+CAS,Name,SMILES,logBCF,LogKOW,Dataset,KOW type,label
+96-69-5,"4,4''-Thiobis (6-t-butyl-m-cresol)",CC(c1c(cc(c(c1)Sc1c(cc(c(c1)C(C)(C)C)O)C)C)O)(C)C,0.82,7.2,Merged,pred,0.82
+13116-53-5,"1,2,2,3-Tetrachloropropane",ClC(CCl)(CCl)Cl,1.6,2.72,Merged,exp,1.6
+V-Mey_NA_02,,N#Cc1cc(ccc1(OP(OC)(OC)=S))Cl,2.33,3.31,Merged,pred,2.33
+41483-43-6,,O=S(=O)(Oc1nc(nc(c1CCCC)C)NCC)N(C)C,2.27,2.7,Merged,exp,2.27
+2310-17-0,,O=C2Oc1cc(ccc1N2CSP(OCC)(OCC)=S)Cl,2.26,4.38,Merged,exp,2.26
+87-02-5,7-Amino-4-hydroxy-2-naphthalenesulfonic acid,Oc1cc(cc2c1ccc(c2)N)S(=O)(=O)O,0.11,-0.47,Merged,pred,0.11
+V-Mey_NA_05,,FC(F)C(F)(F)Oc1ccc(cc1)C(C)(C)CC(C)(C)C,3.92,6.51,Merged,pred,3.92
+82560-54-1,,O=C(Oc2cccc1c2(OC(C)(C)C1))N(C)SN(CCC(=O)OCC)C(C)C,1.95,4.3,Merged,exp,1.95
+731-27-1,,O=S(=O)(N(c1ccc(cc1)C)SC(F)(Cl)Cl)N(C)C,1.87,3.9,Merged,exp,1.87
+99387-89-0,,FC(F)(F)c2cc(ccc2(N=C(n1cncc1)COCCC))Cl,2.59,1.4,Merged,exp,2.59
+78-42-2,Tris(2-ethylhexyl)phosphate,O=P(OCC(CCCC)CC)(OCC(CCCC)CC)OCC(CCCC)CC,1.36,8.57,Merged,pred,1.36
+87-86-5,Pentachlorophenol,Oc1c(c(c(c(c1Cl)Cl)Cl)Cl)Cl,2.67,5.12,Merged,exp,2.67
+626-39-1,"1,3,5-Tribromobenzene",Brc1cc(cc(c1)Br)Br,3.62,4.51,Merged,exp,3.62
+96-18-4,"1,2,3-Trichloropropane",ClC(CCl)CCl,1.07,2.27,Merged,exp,1.07
+129-00-0,Pyrene,c1c2c3c4c(c1)cccc4ccc3ccc2,2.97,4.88,Merged,exp,2.97
+95-48-7,,Oc1ccccc1C,1.03,1.95,Merged,exp,1.03
+91-94-1,"3,3''-Dichlorobenzidine",Clc1c(ccc(c1)c1cc(c(cc1)N)Cl)N,2.23,3.51,Merged,exp,2.23
+76-44-8,Heptachlor,ClC12C3C(C(C1(Cl)Cl)(C(=C2Cl)Cl)Cl)C=CC3Cl,3.95,6.1,Merged,exp,3.95
+98-10-2,Benzenesulfonamide,NS(=O)(=O)c1ccccc1,0.52,0.31,Merged,exp,0.52
+4162-45-2,,OCCOc1c(cc(cc1Br)C(c2cc(c(OCCO)c(c2)Br)Br)(C)C)Br,2.26,6.53,Merged,pred,2.26
+30746-58-8,"1,2,3,4-tetrachloroDibenzo-p-dioxin",Clc1c(c(c(c2c1Oc1c(cccc1)O2)Cl)Cl)Cl,3.48,6.42,Merged,pred,3.48
+119-56-2,,OC(c1ccccc1)c2ccc(cc2)Cl,1.82,3.61,Merged,exp,1.82
+109-69-3,1-Chlorobutane,CCCCCl,1.22,2.64,Merged,exp,1.22
+1634-04-4,,O(C)C(C)(C)C,0.18,0.94,Merged,exp,0.18
+143390-89-0,,O=C(OC)C(=NOC)c1ccccc1COc2ccccc2C,2.34,3.4,Merged,exp,2.34
+77-73-6,Dicyclopentadiene,C1C2C(C3CC2C=C3)C=C1,2.38,2.64,Merged,pred,2.38
+85-83-6,,Oc3ccc4ccccc4(c3(N=Nc2ccc(N=Nc1ccccc1C)cc2C)),0.75,7.87,Merged,pred,0.75
+544-01-4,Diisopentylether,CC(CCOCCC(C)C)C,2.3,3.71,Merged,pred,2.3
+98-15-7,3-Trifluoromethyl-chlorobenzene,FC(c1cc(ccc1)Cl)(F)F,2.34,3.54,Merged,pred,2.34
+95-50-1,o-Dichlorobenzene,Clc1c(cccc1)Cl,2.47,3.43,Merged,exp,2.47
+148-79-8,,n1cscc1c2nc3ccccc3([nH]2),1.98,2.47,Merged,exp,1.98
+13071-79-9,Terbufos,CCOP(=S)(SCSC(C)(C)C)OCC,2.73,4.48,External,exp,2.73
+527-20-8,,Nc1c(c(c(c(c1Cl)Cl)Cl)Cl)Cl,2.71,4.82,Merged,exp,2.71
+38380-03-9,PCB-110,Clc1cc(ccc1Cl)c1c(Cl)ccc(c1Cl)Cl,5.18,6.22,External,exp,5.18
+135-88-6,2-(N-Phenylamino)naphthalene,c1c2c(ccc1Nc1ccccc1)cccc2,2.38,4.43,Merged,pred,2.38
+608-73-1,"1,2,3,4,5,6-Hexachlorocyclohexane",C1(C(C(C(C(C1Cl)Cl)Cl)Cl)Cl)Cl,2.81,3.86,Merged,exp,2.81
+131983-72-7,,O=C(OCC)C1CC(=O)C(C(=O)C1)=C(O)C2CC2,0.78,1.6,Merged,exp,0.78
+92-69-3,p-Phenylphenol,Oc1ccc(cc1)c1ccccc1,1.64,3.2,Merged,exp,1.64
+97-23-4,"2,2''-Dihydroxy-5,5''-dichlorodiphenylmethane",Oc1c(cc(cc1)Cl)Cc1cc(ccc1O)Cl,2.19,4.26,Merged,exp,2.19
+134098-61-6,,O=C(OC(C)(C)C)c1ccc(cc1)CON=Cc3c(nn(c3(Oc2ccccc2))C)C,3.2,5.01,Merged,exp,3.2
+10496-18-1,,CCCCCCCCCCSSCCCCCCCCCC,1.15,9.85,Merged,pred,1.15
+137-26-8,,C(N(C)C)(=S)SSC(N(C)C)=S,0.54,1.73,Merged,exp,0.54
+1806-26-4,p-Octylphenol,Oc1ccc(cc1)CCCCCCCC,2.28,5.41,Merged,pred,2.28
+ 2460-49-3,,Oc1cc(c(cc1(OC))Cl)Cl,1.98,3.26,Merged,exp,1.98
+57465-28-8,"3,3'',4,4'',5-Pentachlorobiphenyl",Clc1c(ccc(c1)c1cc(c(c(c1)Cl)Cl)Cl)Cl,4.68,6.8,Merged,pred,4.68
+111-44-4,"2,2''-Dichlorodiethyl ether",ClCCOCCCl,0.62,1.29,Merged,exp,0.62
+107-39-1,Diisobutylene,CC(CC(=C)C)(C)C,2.81,4.55,Merged,exp,2.81
+ 178928-70-6,,OC(Cc1ccccc1Cl)(CN2N=CNC2=S)C3(CC3)Cl,1.27,2.37,Merged,pred,1.27
+33284-54-7,"2,3,5,6-Tretrachlorobiphenyl",Clc1c(c(c(cc1Cl)Cl)Cl)c1ccccc1,4.71,6.17,Merged,pred,4.71
+298-00-0,,O=[N+]([O-])c1ccc(OP(OC)(OC)=S)cc1,1.89,2.86,Merged,exp,1.89
+28106-30-1,Etylstyrene,CCc1ccccc1C=C,2.69,3.78,Merged,pred,2.69
+25638-17-9,,O=S(=O)(O)c2cccc1ccc(cc12)CCCC,0.18,2.36,Merged,pred,0.18
+123251-96-7,"3,3''-Dichloro-5,5''-benzidine disulfonic acid",Nc1c(cc(cc1Cl)c1cc(c(c(c1)Cl)N)S(=O)(=O)O)S(=O)(=O)O,-0.1,-1.0,Merged,pred,-0.1
+43222-48-6,,c1ccc(cc1)c3cc(c2ccccc2)[n+](n3C)C,1.3,3.07,Merged,pred,1.3
+634-67-3,,Nc1ccc(c(c1Cl)Cl)Cl,2.0,3.33,Merged,exp,2.0
+4390-04-9,"2,2,4,4,6,8,8-Heptamethylnonane",CC(CC(C)(C)C)(CC(CC(C)(C)C)C)C,2.85,7.04,Merged,pred,2.85
+3337-71-1,,O=C(OC)NS(=O)(=O)c1ccc(N)cc1,-0.12,-0.27,Merged,exp,-0.12
+88-89-1,,O=[N+]([O-])c1cc(c(O)c(c1)[N+](=O)[O-])[N+](=O)[O-],0.1,1.33,Merged,exp,0.1
+3766-81-2,,O=C(Oc1ccccc1C(C)CC)NC,0.94,2.78,Merged,exp,0.94
+60-57-1/72-20-8,Endrin,O1C2C1C3CC2C4C3C5(C(=C(C4(C5(Cl)Cl)Cl)Cl)Cl)Cl,3.89,5.3,Merged,exp,3.89
+26225-79-6,,O=S(=O)(Oc1ccc2OC(OCC)C(c2(c1))(C)C)C,2.16,2.69,Merged,pred,2.16
+2581-34-2,4-Nitro-m-cresol,Cc1cc(ccc1[N+](=O)[O-])O,1.16,2.48,Merged,exp,1.16
+2104-64-5,O-Ethyl-O-p-nitrophenyl-phenylthiophosphonate,S=P(c1ccccc1)(Oc1ccc(cc1)[N+](=O)[O-])OCC,2.84,4.78,Merged,exp,2.84
+95-49-8,o-Chlorotoluene,Cc1c(cccc1)Cl,1.86,3.42,Merged,exp,1.86
+133-06-2,,O=C1N(C(=O)C2CC=CCC12)SC(Cl)(Cl)Cl,1.98,2.8,Merged,exp,1.98
+156-43-4,4-Ethoxyaniline,CCOc1ccc(cc1)N,0.76,1.24,Merged,exp,0.76
+98-83-9,alpha-Methylstyrene,CC(=C)c1ccccc1,1.89,3.48,Merged,exp,1.89
+18259-05-7,"2,3,4,5,6-Pentachlorobiphenyl",Clc1c(c(c(c(c1c1ccccc1)Cl)Cl)Cl)Cl,4.85,6.75,Merged,exp,4.85
+1241-94-7,2-Ethylhexyldiphenyl phosphate,O=P(Oc1ccccc1)(Oc1ccccc1)OCC(CCCC)CC,2.59,5.73,Merged,exp,2.59
+108-60-1,Bis(1-methyl-2-chloroethyl)ether,CC(OC(CCl)C)CCl,1.02,2.48,Merged,exp,1.02
+944-61-6,,O(c1c(OC)c(c(c(c1Cl)Cl)Cl)Cl)C,4.4,4.86,Merged,exp,4.4
+38640-62-9,,c2cc1ccc(cc1c(c2)C(C)C)C(C)C,3.27,5.63,Merged,pred,3.27
+2465-27-2,,N=C(c1ccc(cc1)N(C)C)c2ccc(cc2)N(C)C,1.07,3.39,Merged,pred,1.07
+70-30-4,"Bis(2,3,5-trichloro-6-hydoroxyphenyl)methane",Oc1c(c(c(cc1Cl)Cl)Cl)Cc1c(c(cc(c1O)Cl)Cl)Cl,2.1,7.54,Merged,exp,2.1
+101-77-9,"4,4''-Diaminodiphenylmethane",Nc1ccc(cc1)Cc1ccc(cc1)N,1.12,1.59,Merged,exp,1.12
+55285-14-8,,O=C(Oc2cccc1c2(OC(C)(C)C1))N(C)SN(CCCC)CCCC,3.0,5.71,Merged,pred,3.0
+55720-37-1,,c1cc(cc2c1cc(cc2Cl)Cl)Cl,4.43,5.35,Merged,exp,4.43
+1945-53-5,,O=C(O)C2(C)(CCCC3(C1=C(C=C(CC1)C(C)C)CCC23)(C)),1.4,5.76,Merged,pred,1.4
+10541-83-0,p-(Methylamino) benzoic acid,CNc1ccc(cc1)C(=O)O,0.07,1.29,Merged,pred,0.07
+709-98-8,,O=C(Nc1ccc(c(c1)Cl)Cl)CC,1.94,3.07,Merged,exp,1.94
+91-20-3,Naphthalene,c1c2c(ccc1)cccc2,2.15,3.3,Merged,exp,2.15
+100-17-4,4-Nitrophenyl methylether,O=[N+](c1ccc(cc1)OC)[O-],0.93,2.03,Merged,exp,0.93
+108-42-9,,Nc1cccc(c1)Cl,0.33,1.88,Merged,exp,0.33
+95-95-4,"2,4,5-Trichlorophenol",Oc1c(cc(c(c1)Cl)Cl)Cl,2.6,3.72,Merged,exp,2.6
+51892-26-3,,O(c1ccccc1)c2ccc(cc2Cl)Cl,3.97,4.93,Merged,exp,3.97
+298-02-2,,O(CC)P(OCC)(=S)SCSCC,2.68,3.56,Merged,exp,2.68
+95465-99-9,,O=P(OCC)(SC(C)CC)SC(C)CC,2.34,3.9,Merged,exp,2.34
+ 105-67-9,,Oc1ccc(cc1C)C,1.18,2.3,Merged,exp,1.18
+122-34-9,,n1c(nc(nc1NCC)Cl)NCC,0.84,2.18,Merged,exp,0.84
+2216-69-5,1-Methoxynaphthalene,COc1cccc2c1cccc2,2.26,3.45,Merged,exp,2.26
+148-75-4,"2-Naphthol-3,6-disulfonic acid",OS(=O)(=O)c1c(cc2c(c1)cc(cc2)S(=O)(=O)O)O,0.3,-1.69,Merged,pred,0.3
+3296-90-0,Dibromoneopentylglycol,OCC(CO)(CBr)CBr,0.42,1.06,Merged,exp,0.42
+26630-87-5,Disperse Red 206,O=C(c1ccccc1)Nc1c(ccc(c1)N(CCOC(=O)C)CCOC(=O)C)N=NC1=Nc2ccc(cc2S1)Cl,1.22,6.24,Merged,pred,1.22
+75-98-9,,O=C(O)C(C)(C)C,0.23,1.48,Merged,exp,0.23
+65733-16-6,,O=C(OC(C)C)C=C(C=CCC(C)CCCC(OC)(C)C)C,2.66,5.5,Merged,exp,2.66
+120-83-2,"2,4-Dichlorophenol",Clc1c(ccc(c1)Cl)O,1.71,3.06,Merged,exp,1.71
+75-09-2,Dichloromethane,ClCCl,1.22,1.25,Merged,exp,1.22
+3761-42-0,,O=S(=O)(c1ccc(OP(OC)(OC)=S)cc1C)C,0.5,2.43,Merged,pred,0.5
+102-71-6,Triethanolamine,OCCN(CCO)CCO,0.35,-1.0,Merged,exp,0.35
+4051-66-5,,O=C(NCCCCCCCCCCCCCCCCCC)NCCCCCCCCCCCCCCCCCC,1.48,13.73,Merged,pred,1.48
+18708-70-8,,O=[N+]([O-])c1c(cc(cc1Cl)Cl)Cl,2.6,3.69,Merged,exp,2.6
+51-44-5,,O=C(O)c1ccc(c(c1)Cl)Cl,0.1,3.25,Merged,exp,0.1
+4685-14-7,"N,N''-Dimethyl-4,4''-bipyridinium dichloride",C[n+]1ccc(cc1)c1cc[n+](cc1)C,0.28,-2.65,Merged,pred,0.28
+14816-18-3,"O,O-Diethyl-O(a-cyanobenzylideneamino) thiophosphate",S=P(ON=C(c1ccccc1)C#N)(OCC)OCC,2.89,4.39,Merged,exp,2.89
+122-20-3,Tris(2-hydroxypropyl)amine,CC(CN(CC(C)O)CC(C)O)O,-0.49,-0.69,Merged,pred,-0.49
+935-95-5,,Oc1c(c(cc(c1Cl)Cl)Cl)Cl,2.15,3.88,Merged,exp,2.15
+66215-27-8,,n1c(nc(nc1N)NC2CC2)N,0.0,0.1,Merged,pred,0.0
+115-32-2,"1,1-Bis(p-chlorophenyl)-2,2,2-trichloroethanol",OC(c1ccc(cc1)Cl)(c1ccc(cc1)Cl)C(Cl)(Cl)Cl,3.78,5.02,Merged,exp,3.78
+54135-80-7,,O(c1ccc(c(c1Cl)Cl)Cl)C,2.96,3.74,Merged,exp,2.96
+89-61-2,,O=[N+]([O-])c1cc(ccc1Cl)Cl,2.05,3.09,Merged,exp,2.05
+144-19-4,"2,2,4-Trimethyl-1,3-pentanediol",CC(C(C(C)C)O)(CO)C,-0.16,1.24,Merged,exp,-0.16
+124495-18-7,,Fc3ccc(Oc2ccnc1cc(cc(c12)Cl)Cl)cc3,3.7,5.23,Merged,pred,3.7
+122-39-4,Diphenylamine,N(c1ccccc1)c1ccccc1,2.24,3.5,Merged,exp,2.24
+103-83-3,"N,N-Dimethylbenzylamine",CN(Cc1ccccc1)C,1.05,1.98,Merged,exp,1.05
+335-76-2,Perfluorodecanoic acid,OC(=O)C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,2.65,2.9,External,exp,2.65
+80-43-3,Dicumylperoxide,CC(c1ccccc1)(OOC(c1ccccc1)(C)C)C,2.75,5.56,Merged,pred,2.75
+ 74-11-3,,O=C(O)c1ccc(cc1)Cl,1.0,2.65,Merged,exp,1.0
+933-12-0,"Cyclohexene, 3,5,5-trimethyl-",CC1(CC(C=CC1)C)C,2.87,3.88,Merged,pred,2.87
+145-73-3,,O=C(O)C2C1OC(CC1)C2(C(=O)O),-0.4,1.91,Merged,exp,-0.4
+82558-50-7,,O=C(Nc1onc(c1)C(C)(CC)CC)c2c(OC)cccc2(OC),1.85,3.94,Merged,exp,1.85
+26644-46-2,,O=CNC(N1CCN(CC1)C(NC=O)C(Cl)(Cl)Cl)C(Cl)(Cl)Cl,0.0,2.2,Merged,exp,0.0
+125116-23-6,,OC3(Cn1ncnc1)(C(Cc2ccc(cc2)Cl)CCC3(C)(C)),2.11,3.93,Merged,exp,2.11
+99-99-0,p-Nitrotoluene,O=[N+](c1ccc(cc1)C)[O-],0.91,2.37,Merged,exp,0.91
+98-54-4,p-tert-Butylphenol,CC(c1ccc(cc1)O)(C)C,1.79,3.31,Merged,exp,1.79
+95-69-2,Chloromethylaniline,Cc1c(ccc(c1)Cl)N,1.37,2.29,Merged,pred,1.37
+2032-65-7,,O=C(Oc1cc(c(c(c1)C)SC)C)NC,1.88,2.92,Merged,exp,1.88
+76-93-7,"2,2-Diphenyl-2-hydroxyacetic acid",OC(c1ccccc1)(c1ccccc1)C(=O)O,0.02,2.3,Merged,exp,0.02
+67564-91-4,,O1C(C)CN(CC1C)CC(C)Cc2ccc(cc2)C(C)(C)C,3.03,4.93,Merged,exp,3.03
+92341-06-5,,o2c1cc(c(c(c1c3c2c(c(cc3Cl)Cl)Cl)Cl)Cl)Cl,3.2,7.32,Merged,pred,3.2
+104-40-5,,Oc1ccc(cc1)CCCCCCCCC,2.57,5.76,Merged,exp,2.57
+156052-68-5,,O=C(NC(C(=O)CCl)(C)CC)c1cc(c(c(c1)Cl)C)Cl,2.06,3.88,Merged,pred,2.06
+123-48-8,"2,2,4,6,6-Pentamethyl-3-heptene",CC(CC(=CC(C)(C)C)C)(C)C,3.29,5.42,Merged,pred,3.29
+37680-65-2,,c1ccc(c(c1)c2cc(ccc2Cl)Cl)Cl,4.23,5.55,Merged,exp,4.23
+2027-17-0,,c1ccc2cc(ccc2(c1))C(C)C,4.11,4.47,Merged,pred,4.11
+111-94-4,Bis(cyanoethyl)amine,N#CCCNCCC#N,-0.13,-1.34,Merged,exp,-0.13
+23184-66-9,,O=C(N(c1c(cccc1CC)CC)COCCCC)CCl,0.38,4.61,Merged,pred,0.38
+79-34-5,"1,1,2,2-Tetrachloroethane",ClC(C(Cl)Cl)Cl,1.07,2.39,Merged,exp,1.07
+84-15-1,,c1ccc(cc1)c3ccccc3(c2ccccc2),3.3,5.42,Merged,pred,3.3
+25057-89-0,,O=C1c2ccccc2(NS(=O)(=O)N1C(C)C),1.32,2.34,Merged,exp,1.32
+1934-21-0,,O=C(O)C2=NN(C(=O)C2(N=Nc1ccc(cc1)S(=O)(=O)O))c3ccc(cc3)S(=O)(=O)O,0.23,-0.63,Merged,pred,0.23
+2050-68-2,,c1cc(ccc1c2ccc(cc2)Cl)Cl,3.58,5.23,Merged,exp,3.58
+79-01-6,Trichloroethylene,ClC(=CCl)Cl,1.16,2.42,Merged,exp,1.16
+118-74-1,Hexachlorobenzene,Clc1c(c(c(c(c1Cl)Cl)Cl)Cl)Cl,4.27,5.73,Merged,exp,4.27
+57117-39-2,,o2c1cc(c(cc1c3ccc(c(c23)Cl)Cl)Cl)Cl,2.72,6.31,Merged,exp,2.72
+39227-58-2,"1,2,4-trichloroDibenzo-p-dioxin",Clc1c(cc(c2c1Oc1c(cccc1)O2)Cl)Cl,2.83,6.35,Merged,exp,2.83
+26603-23-6,,c1cc(ccc1Nc2ccc(cc2)CCCCCCCC)CCCCCCCC,1.54,10.52,Merged,pred,1.54
+23135-22-0,,O=C(ON=C(C(=O)N(C)C)SC)NC,0.3,-0.48,Merged,exp,0.3
+15299-99-7,,O=C(N(CC)CC)C(Oc1cccc2ccccc12)C,1.99,3.36,Merged,exp,1.99
+74-97-5,Bromochloromethane,ClCBr,0.53,1.41,Merged,exp,0.53
+15302-91-7,,C[N+]1(C)(CCCCC1),0.3,-2.09,Merged,pred,0.3
+482-89-3,,O=C1c4ccccc4(NC1=C2Nc3ccccc3(C2(=O))),0.46,2.51,Merged,pred,0.46
+50853-70-8,"Methyl-5-norbornene-2,3-dicarboxylic acid",CC1=CC2CC1C(C2C(=O)O)C(=O)O,0.74,1.01,Merged,pred,0.74
+2042-14-0,3-Nitro-p-cresol,Cc1ccc(cc1[N+](=O)[O-])O,1.02,2.18,Merged,exp,1.02
+71-43-2,,c1ccccc1,0.63,2.13,Merged,exp,0.63
+32669-06-0,2-Chloroethylbenzhydryl ether,ClCCOC(c1ccccc1)c1ccccc1,2.6,4.38,Merged,exp,2.6
+218-01-9,Chrysene,c1cc2ccccc2c2ccc3c(c12)cccc3,2.24,5.81,Merged,exp,2.24
+118-83-2,4-Chloro-1-nitro-2(trifluoromethyl) benzene,FC(c1c(ccc(c1)Cl)[N+](=O)[O-])(F)F,1.95,3.2,Merged,exp,1.95
+1212-29-9,,N(C(NC1CCCCC1)=S)C2CCCCC2,0.65,3.69,Merged,exp,0.65
+ 93-72-1,,O=C(O)C(Oc1cc(c(cc1Cl)Cl)Cl)C,1.76,3.8,Merged,exp,1.76
+118134-30-8,,O1CC(OC12(CCC(CC2)C(C)(C)C))CN(CC)CCC,1.9,4.54,Merged,pred,1.9
+105512-06-9,,O=C(OCC#C)C(Oc2ccc(Oc1ncc(cc1(F))Cl)cc2)C,1.53,3.9,Merged,exp,1.53
+225-11-6,,n1c4ccccc4(cc3c1ccc2ccccc23),2.02,4.46,Merged,pred,2.02
+57117-41-6,,o2c1cc(c(cc1c3c2cc(c(c3Cl)Cl)Cl)Cl)Cl,3.58,6.79,Merged,exp,3.58
+108-43-0,m-Chlorophenol,Oc1cc(ccc1)Cl,1.14,2.5,Merged,exp,1.14
+175013-18-0,,O=C(OC)N(OC)c1ccccc1COc2nn(cc2)c3ccc(cc3)Cl,2.85,4.65,Merged,pred,2.85
+75-25-2,Tribromomethane,BrC(Br)Br,1.18,2.4,Merged,exp,1.18
+24019-05-4,"N-(3,4-Dichlorophenyl)-N''-(2''-(4''''-chloro-2''''-sulfophenoxy)-5''-chlorophenyl) urea",OS(=O)(=O)c1c(ccc(c1)Cl)Oc1c(cc(cc1)Cl)NC(=O)Nc1cc(c(cc1)Cl)Cl,1.9,4.4,Merged,pred,1.9
+103-50-4,Dibenzylether,C(c1ccccc1)OCc1ccccc1,2.48,3.31,Merged,exp,2.48
+19044-88-3,,O=[N+]([O-])c1cc(cc(c1N(CCC)CCC)[N+](=O)[O-])S(=O)(=O)N,1.88,3.73,Merged,exp,1.88
+69327-76-0,,O=C2N(c1ccccc1)CSC(=NC(C)(C)C)N2C(C)C,2.71,4.3,Merged,exp,2.71
+16606-02-3,"2,4'',5-Trichlorobiphenyl",Clc1c(cc(cc1)Cl)c1ccc(cc1)Cl,4.09,5.69,Merged,exp,4.09
+94-75-7,,O=C(O)COc1ccc(cc1Cl)Cl,-0.5,2.81,Merged,exp,-0.5
+74115-24-5,,n1nc(nnc1c2ccccc2Cl)c3ccccc3Cl,2.39,3.1,Merged,exp,2.39
+1918-02-1,,O=C(O)c1nc(c(c(N)c1Cl)Cl)Cl,-1.7,1.99,Merged,pred,-1.7
+57018-04-9,,O(c1c(cc(cc1Cl)C)Cl)P(OC)(OC)=S,2.85,4.56,Merged,exp,2.85
+1746-81-2,,O=C(Nc1ccc(cc1)Cl)N(OC)C,1.15,2.3,Merged,exp,1.15
+504-29-0,2-Aminopyridine,Nc1ncccc1,1.04,0.26,Merged,pred,1.04
+67-68-5,Dimethyl sulfoxide,CS(=O)C,0.35,-1.35,Merged,exp,0.35
+1740-19-8,,O=C(O)C2(C)(CCCC3(c1ccc(cc1CCC23)C(C)C)(C)),2.12,6.01,Merged,pred,2.12
+591-35-5,"3,5-Dichlorophenol",Oc1cc(cc(c1)Cl)Cl,1.92,3.62,Merged,exp,1.92
+25154-52-3,,Oc1ccc(cc1)C(C)CC(C)CC(C)C,2.19,5.47,Merged,pred,2.19
+106-43-4,p-Chlorotoluene,Cc1ccc(cc1)Cl,1.8,3.33,Merged,exp,1.8
+72178-02-0,,O=C(NS(=O)(=O)C)c2cc(Oc1ccc(cc1Cl)C(F)(F)F)ccc2[N+](=O)[O-],0.78,2.9,Merged,exp,0.78
+123-63-7,p-Acetaldehyde,CC1OC(OC(O1)C)C,0.28,0.67,Merged,exp,0.28
+38380-02-8,"2,3,4,2'',5''-Pentachlorobiphenyl",Clc1c(ccc(c1Cl)Cl)c1cc(ccc1Cl)Cl,4.7,6.85,Merged,exp,4.7
+50-30-6,,O=C(O)c1c(cccc1Cl)Cl,0.02,2.23,Merged,exp,0.02
+834-12-8,,n1c(nc(nc1NC(C)C)SC)NCC,1.52,2.98,Merged,exp,1.52
+28680-44-6,,C1(=C(C2(C(=C(C1(C2)Cl)Cl)Cl)Cl)Cl)Cl,3.81,4.62,Merged,pred,3.81
+89-93-0,alpha-Methylbenzylamine,Cc1ccccc1CN,0.57,1.48,Merged,pred,0.57
+99-09-2,3-Nitroaniline,O=[N+](c1cccc(c1)N)[O-],0.51,1.13,Merged,pred,0.51
+35367-38-5,,O=C(NC(=O)c1c(F)cccc1(F))Nc2ccc(cc2)Cl,2.35,3.88,Merged,exp,2.35
+51207-31-9,"2,3,7,8-Tetrachlorodibenzofuran",Clc1cc2c(oc3c2cc(c(c3)Cl)Cl)cc1Cl,3.69,6.53,Merged,exp,3.69
+115-29-7,,O=S1OCC2C(CO1)C3(C(=C(C2(C3(Cl)Cl)Cl)Cl)Cl)Cl,3.44,3.83,Merged,exp,3.44
+101-14-4,"3,3''-Dichloro-4,4''-diaminodiphenylmethane",Clc1c(ccc(c1)Cc1cc(c(cc1)N)Cl)N,2.33,3.91,Merged,exp,2.33
+15972-60-8,,O=C(N(c1c(cccc1CC)CC)COC)CCl,1.12,3.52,Merged,exp,1.12
+127-18-4,Tetrachloroethylene,ClC(=C(Cl)Cl)Cl,1.78,3.4,Merged,exp,1.78
+35065-29-3,PCB-180,Clc1cc(Cl)c(cc1c1cc(Cl)c(c(c1Cl)Cl)Cl)Cl,6.06,6.89,External,exp,6.06
+335-67-1,Perflurooctanic acid,FC(C(C(C(C(=O)O)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)F,3.12,2.8,Merged,exp,3.12
+96-76-4,"2,4-di-tert-Butylphenol",Oc1ccc(cc1C(C)(C)C)C(C)(C)C,2.46,5.19,Merged,exp,2.46
+294-62-2,Cyclododecane,C1CCCCCCCCCCC1,3.95,5.99,Merged,pred,3.95
+47377-16-2,4-tetradecyl-Benzenesulfonic acid,OS(=O)(=O)c1ccc(cc1)CCCCCCCCCCCCCC,0.52,5.83,Merged,pred,0.52
+346-10-1,,O=C(Nc1ccc(NC(=O)C(F)(F)C(F)(F)C(F)(F)F)c(O)c1)C(Oc2ccc(cc2C(C)(C)CC)C(C)(C)CC)CC,0.49,8.4,Merged,pred,0.49
+83055-99-6,,O=C(OC)c1ccccc1CS(=O)(=O)NC(=O)Nc2nc(OC)cc(n2)OC,0.2,2.45,Merged,exp,0.2
+76-12-0,"1,1,2,2-Tetrachloro-1,2-difluoroethane",FC(C(F)(Cl)Cl)(Cl)Cl,1.84,3.26,Merged,pred,1.84
+609-89-2,"2,4-Dichloro-6-nitrophenol",Oc1c(cc(cc1Cl)Cl)[N+](=O)[O-],1.35,2.83,Merged,pred,1.35
+96525-23-4,,O=C2C(c1cccc(c1)C(F)(F)F)=C(OC2c3ccccc3)NC,1.44,3.19,Merged,pred,1.44
+206-44-0,Fluoranthene,c1ccc2c3c1c1ccccc1c3ccc2,3.5,5.16,Merged,exp,3.5
+829-26-5,"2,3,6-trimethylnaphthalene",Cc1cc2c(cc1C)ccc(c2)C,3.0,4.73,Merged,exp,3.0
+28076-73-5,"2,2'',4,4''-Tetrachlorodiphenyl ether",Clc1c(ccc(c1)Cl)Oc1c(cc(cc1)Cl)Cl,4.14,5.95,Merged,exp,4.14
+1141-38-4,"2,6-Naphthalenedicarboxylic acid",OC(=O)c1cc2ccc(cc2cc1)C(=O)O,0.68,2.35,Merged,pred,0.68
+298-07-7,Di (2-ethylhexyl) phosphoric acid,OP(=O)(OCC(CCCC)CC)OCC(CCCC)CC,0.62,5.5,Merged,pred,0.62

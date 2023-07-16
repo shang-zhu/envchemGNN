@@ -56,32 +56,26 @@ col = {'Model':[], 'Feat': [], 'Label':[], metric+'_mean':[], metric+'_std':[]}
 model_perf_df=pd.DataFrame(col)
 for feat_idx, feat in enumerate(feat_list):
     for model_idx, model in enumerate(model_list): 
-            
-            # #results, we use k-fold validation k=5
-            # loss,  _, result, ytest, result_train, ytrain, model2save, train_idxs, valid_idxs, test_idxs =\
-            #     trainer.st_train_wrapper(feat_arrs[feat_idx], df, model, \
-            #         transform='raw', input_transform='standard', metric=metric, split_col=split_col, label_col=label)
+        #results, we use k-fold validation k=5
+        loss,  _, result, ytest, result_train, ytrain, model2save, train_idxs, valid_idxs, test_idxs =\
+            trainer.st_train_wrapper(feat_arrs[feat_idx], df, model, \
+                transform='raw', input_transform='raw', metric=metric, split_col=split_col, label_col=label)
 
-            #results, we use k-fold validation k=5
-            loss,  _, result, ytest, result_train, ytrain, model2save, train_idxs, valid_idxs, test_idxs =\
-                trainer.st_train_wrapper(feat_arrs[feat_idx], df, model, \
-                    transform='raw', input_transform='raw', metric=metric, split_col=split_col, label_col=label)
-   
-
-            #outputting results
-            print('Regression on %s, Feature - %s, Model - %s :' \
-                %(label, feat, model))
-            print('MAE %0.2E +/- %0.2E' \
-                %(loss.mean(axis=0), loss.std(axis=0)))
-            model_perf_df.loc[len(model_perf_df.index)] = \
-                [model, feat, label, loss.mean(axis=0)[0], loss.std(axis=0)[0]]
-            
-            #saving models
-            if save_model:
-                for idx in range(len(model2save)):
-                    model_dir=result_path+save_model_name+'/saved_model/'+feat+'/'+model+'/'
-                    trainer.save_model(model2save[idx], model_dir, idx)
+        #outputting results
+        print('Regression on %s, Feature - %s, Model - %s :' \
+            %(label, feat, model))
+        print(metric+' %0.2E +/- %0.2E' \
+            %(loss.mean(axis=0), loss.std(axis=0)))
+        model_perf_df.loc[len(model_perf_df.index)] = \
+            [model, feat, label, loss.mean(axis=0)[0], loss.std(axis=0)[0]]
+        
+        #saving models
+        if save_model:
+            for idx in range(len(model2save)):
+                model_dir=result_path+save_model_name+'/saved_model/'+feat+'/'+model+'/'
+                trainer.save_model(model2save[idx], model_dir, idx)
                     
+#saving training-validation-testing splits to test other models               
 for fold, train_idx in enumerate(train_idxs):
     with open(result_path+save_model_name+'/train_idx_'+str(fold)+'.txt', 'a+') as fp:
         for idx in train_idx:
@@ -96,7 +90,8 @@ for fold, test_idx in enumerate(test_idxs):
     with open(result_path+save_model_name+'/test_idx_'+str(fold)+'.txt', 'a+') as fp:
         for idx in test_idx:
             fp.write("%s\n" % idx)
-
+            
+#summary of prediction results
 model_perf_df.to_csv(result_path+save_model_name+'/summary_kfold.csv', index=False)
     
 
