@@ -39,6 +39,7 @@ parser = argparse.ArgumentParser(description="NeuralFP model implemented by Deep
 parser.add_argument("--folder_idx", type=int, required=True)
 parser.add_argument("--data_path", type=str, required=True)
 parser.add_argument("--split_folder", type=str, required=True)
+parser.add_argument("--result_path", type=str, required=True)
 parser.add_argument("--layer", type=int, required=True)
 parser.add_argument("--dense", type=int, required=True)
 parser.add_argument("--dropout", type=int, required=True)
@@ -49,7 +50,7 @@ print(args)
 seed=args.folder_idx
 data_path=args.data_path
 folder_path=args.split_folder
-save_folder=folder_path+'NeuralFP/' #this line is modified
+save_folder=args.result_path
 layer_id=args.layer
 dense_id=args.dense
 dropout_id=args.dropout
@@ -83,6 +84,7 @@ k=5
 kf = KFold(n_splits= k, shuffle=True, random_state=1)
 
 k_idx=0
+predicts_test=[]
 for train_idx, val_idx in kf.split(full_train_idx):
     print('kfold index:', k_idx)
     loader = dc.data.CSVLoader(['label'], feature_field="SMILES",
@@ -90,7 +92,7 @@ for train_idx, val_idx in kf.split(full_train_idx):
     data = loader.create_dataset(data_path)
     splitter = dc.splits.SpecifiedSplitter(valid_indices=val_idx, test_indices=test_idx)
     train_data, val_data, test_data =splitter.train_valid_test_split(data)
-    np.save(save_folder+'test_'+str(seed)+'.npy', test_data.y)
+    # np.save(save_folder+'test_'+str(seed)+'.npy', test_data.y)
 
     n_tasks = 1
     nepochs=100
@@ -114,11 +116,18 @@ for train_idx, val_idx in kf.split(full_train_idx):
             val_opt=val_loss
             test_opt=test_loss
             predict_test=model.predict(test_data)
-            np.save(save_folder+'test_pred_'+str(seed)+'_'+str(k_idx)+'.npy', predict_test)
+            # np.save(save_folder+'test_pred_'+str(seed)+'_'+str(k_idx)+'.npy', predict_test)
         
         print('Epoch', (i_output+1)*freq, ': train ', train_loss,
         ', valid ', val_loss, ', test ',  test_loss,'\n')
 
     print('best valid loss:', val_opt)
     print('best test loss:', test_opt)
+    predicts_test+=[predict_test.reshape(-1,).tolist()]
     k_idx+=1
+
+col = {'idx':test_idx,'y_true':test_data.y.reshape(-1,).tolist(), 'y_pred0': predicts_test[0], 'y_pred1':predicts_test[1],\
+    'y_pred2':predicts_test[2], 'y_pred3':predicts_test[3], 'y_pred4':predicts_test[4]}
+
+model_perf_df=pd.DataFrame(col)
+model_perf_df.to_csv(save_folder+'preds_'+str(seed)+'.csv',index=False)

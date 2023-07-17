@@ -11,11 +11,22 @@ The implementation of NeuralFP is from [DeepChem](https://deepchem.io/) and the 
 ```
 #create conda environment
 conda create --name ecgnn python=3.7
-conda activate ecgnn
+conda activate ecgnn2
 
 #install packages for model training
 pip install -U scikit-learn 
 conda install -c rdkit -c mordred-descriptor mordred
+pip install --pre deepchem[tensorflow]
+<!-- pip install torch torchvision torchaudio torch_geometric -->
+
+conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+conda install pyg -c pyg
+conda install pytorch-scatter pytorch-sparse -c pyg -c pytorch -c nvidia -c conda-forge
+#pytorch-sparse 
+pip install ogb
+pip install tensorboard
+conda install -c rdkit rdkit
+
 
 #other packages for data analysis
 pip install pandas matplotlib
@@ -48,52 +59,65 @@ data
 
 1. run the following commands in your terminal
 ```
-data_path='your_local_dir/envchemGNN/data/'
-result_path='your_local_dir/envchemGNN/result/'
-csv_name='ESOL' # other tasks: 'BCF' 'Clint'
+cd $your_local_dir'/envchemGNN/model/feature-based'
+data_path=$your_local_dir'/envchemGNN/data/'
+result_path=$your_local_dir'/envchemGNN/result/feature_based/'
+task='ESOL' # other tasks: 'BCF' 'Clint'
 
 #create features
-python data.py --input_path $data_path'model_input/random_split/'$csv_name'.csv' \
-        --output_path $data_path'features/'$csv_name'/'
+python data.py --input_path $data_path'random_split/'$task'.csv' \
+        --output_path $data_path'features/'$task'/'
 
 #train models (random split)
-python run.py --feat_path $data_path'features/'$csv_name'/' \
-    --label_path $data_path'model_input/random_split/'$csv_name'.csv' --label_name 'label' \
+python run.py --feat_path $data_path'features/'$task'/' \
+    --label_path $data_path'random_split/'$task'.csv' --label_name 'label' \
     --task 'regression' --metric 'RMSE' --save_model --result_path $result_path
 ```
 
-2. The testing results are saved at $result_path/feature_result/$csv_name/summary_kfold.csv for further analysis
+2. The testing results are saved at $result_path/$csv_name/summary_kfold.csv for further analysis, along with the training-validation-testing-split indexes, and saved models. Notice that validation set is not necessary for the feature-based models except for Neural-networks, the validation-idx is empty.
+
+3. We observed a small stochasticity of model training, which didn't influence the model selection results.
+
 
 ### Train a neuralFP model
 
 1. run the following commands in your terminal
 ```
-result_path='your_local_dir/envchemGNN/result/'
-data_path='your_local_dir/envchemGNN/data/'
+cd $your_local_dir'/envchemGNN/model/deepchem/'
+result_path=$your_local_dir'/envchemGNN/result/'
+data_path=$your_local_dir'/envchemGNN/data/'
 task='ESOL'
 split_id=0 # will run id=1,2,3,4 for cross validation
 
-python run.py --folder_idx $split_id --data_path $data_path'model_input/random_split/'$task'.csv' 
-        --split_folder $result_path$task --dense 1 --dropout 0 --layer 1
+#need to first run feature-based models above, so that train-valid-test splits are provided. otherwise remove '--split_folder'.
+python run.py --folder_idx $split_id --data_path $data_path'random_split/'$task'.csv' --split_folder $result_path'feature_based/'$task'/' --result_path $result_path'neuralFP/'$task'/' \
+        --dense 1 --dropout 0 --layer 1
 ```
 2. prediction results are saved at (5 files from an ensemble of 5 models): 
-```$result_path$task'NeuralFP/test_pred_'+str(split_id)+'_'+[0-4]+'.npy'```
-with true labels
-```$result_path$task'NeuralFP/test_'+str(split_id)+'.npy'```.
+```$result_path'neuralFP/'$task'NeuralFP/preds_'+str(split_id)+'.csv'```
+which has 7 columns, including idx(test set indexs from original dataset), y_true (true labels) and y_pred_[0-4] from an esemble of 5 models.
 Then you can average the prediction of model ensembles and compare the predictions with true labels, get RMSE or other metrics.
 
 3. optimized hyperparameters for other tasks:
 
+```
+'BCF': --dense 1 --dropout 0 --layer 2
+'Clint': --dense 1 --dropout 0 --layer 2
+'O3': --dense 1 --dropout 0 --layer 0
+'SO4': --dense 1 --dropout 0 --layer 2
+```
+
 ### Train a O-GNN model
 1. run the following command in your terminal
 ```
-result_path='your_local_dir/envchemGNN/result/'
-data_path='your_local_dir/envchemGNN/data/o_gnn_input/'
-task='Clint'
+cd $your_local_dir'/envchemGNN/model/o-gnn'
+result_path=$your_local_dir'/envchemGNN/result/'
+data_path=$your_local_dir'/envchemGNN/data/o_gnn_input/'
+task='ESOL'
 split_id=0 # will run id=1,2,3,4 for cross validation
 N_epoch=200 #400 for BCF and SO4
 
-python main_dg_regress.py --random_seed 15213 \
+python run.py --random_seed 15213 \
         --input_path $data_path \
         --input_csv_name $task --gnn 'dualgraph2' \
         --save-test True \
@@ -103,12 +127,14 @@ python main_dg_regress.py --random_seed 15213 \
         --weight-decay 0.1 --beta2 0.999 --num-workers 1 \
         --mlp-hidden-size 256 --lr-warmup \
         --use-adamw --node-attn --period 25 \
-        --split_folder $result_path$task \
-        --kfold_idx $split_id
+        --split_folder $result_path'feature_based/'$task'/' \
+        --kfold_idx $split_id \
+        --result_path $result_path'o-gnn/'$task'/'
+
 ```
 2.  prediction results are saved at : 
-```$result_path$task'OGNN/preds_'+str(split_id)+'.csv'```
-which has 6 columns, including y_true (true labels) and y_pred_[0-4] from an esemble of 5 models.
+```$result_path'o-gnn/'$task'/preds_'+str(split_id)+'.csv'```
+which has 7 columns, including idx(test set indexs from original dataset), y_true (true labels) and y_pred_[0-4] from an esemble of 5 models.
 Then you can average the prediction of model ensembles and compare the predictions with true labels, get RMSE or other metrics.
 
 3. Extract the features after graph pooling layer:

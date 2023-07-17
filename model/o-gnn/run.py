@@ -181,12 +181,13 @@ def main():
     parser.add_argument('--split_folder', type=str, default='')
     parser.add_argument('--kfold_idx', type=int, required=True)
     parser.add_argument('--unit_clip', type=bool, default=False)
+    parser.add_argument('--result_path', type=str, required=True)
 
     args = parser.parse_args()
     init_distributed_mode(args)
     print(args)
 
-    save_folder=args.split_folder+'OGNN/'
+    save_folder=args.result_path
     if not os.path.exists(save_folder):
         # Create a new directory because it does not exist
         try:
@@ -214,10 +215,6 @@ def main():
     else:
         train_idx, val_idx, test_idx=get_split_idx(len(dataset))
     
-    if args.save_test:
-        with open(save_folder+'/test_idx_'+str(kfold_idx)+'.txt', 'a+') as fp:
-            for idx in test_idx:
-                fp.write("%s\n" % idx)
 
     if args.checkpoint_dir != "":
         os.makedirs(args.checkpoint_dir, exist_ok=True)
@@ -379,7 +376,7 @@ def main():
                         print("Predicting on test data...")
                         y_true, y_pred = test(model, device, test_loader, args)
                         if name_appendix==0:
-                            test_df=pd.DataFrame.from_dict({'y_true':list(y_true.cpu().detach().numpy()),\
+                            test_df=pd.DataFrame.from_dict({'idx':test_idx,'y_true':list(y_true.cpu().detach().numpy()),\
                                 'y_pred'+str(name_appendix):list(y_pred.cpu().detach().numpy())})
                         else:
                             test_df=pd.read_csv(save_folder+'/preds_'+str(kfold_idx)+'.csv')
@@ -395,9 +392,9 @@ def main():
             if args.distributed:
                 torch.distributed.destroy_process_group()
             
-            with open(save_folder+'result.txt', 'a+') as f:
-                f.write(f'data(seed)-best valid/test MAE,{args.input_csv_name}, {args.random_seed},\
-                    {best_valid_mae.detach().cpu().item()}, {best_test_mae.detach().cpu().item()}\n')
+            # with open(save_folder+'result.txt', 'a+') as f:
+            #     f.write(f'data({args.random_seed})-best valid/test MAE,{args.input_csv_name}, {args.random_seed},\
+            #         {best_valid_mae.detach().cpu().item()}, {best_test_mae.detach().cpu().item()}\n')
     
     else:
         train_loader = DataLoader(dataset[train_idx], batch_size=args.batch_size, shuffle=True, num_workers = args.num_workers)
@@ -493,7 +490,7 @@ def main():
                     torch.save(model.state_dict(), save_folder+'/model.pt')
                     print("Predicting on test data...")
                     y_true, y_pred = test(model, device, test_loader, args)
-                    test_df=pd.DataFrame.from_dict({'y_true':list(y_true.cpu().detach().numpy()),\
+                    test_df=pd.DataFrame.from_dict({'idx':test_idx,'y_true':list(y_true.cpu().detach().numpy()),\
                         'y_pred':list(y_pred.cpu().detach().numpy())})
                     test_df.to_csv(save_folder+'/preds_'+str(kfold_idx)+'.csv', index=False)
 
@@ -506,9 +503,9 @@ def main():
         if args.distributed:
             torch.distributed.destroy_process_group()
         
-        with open(save_folder+'/result.txt', 'a+') as f:
-            f.write(f'data(seed)-best valid/test MAE,{args.input_csv_name}, {args.random_seed},\
-                {best_valid_mae.detach().cpu().item()}, {best_test_mae.detach().cpu().item()}\n')
+        # with open(save_folder+'/result.txt', 'a+') as f:
+        #     f.write(f'data({args.random_seed})-best valid/test MAE,{args.input_csv_name}, {args.random_seed},\
+        #         {best_valid_mae.detach().cpu().item()}, {best_test_mae.detach().cpu().item()}\n')
 
 
 if __name__ == "__main__":
