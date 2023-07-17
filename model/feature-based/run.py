@@ -45,7 +45,7 @@ df=pd.read_csv(label_path)
 print('loading dataframe successfully!')
 
 #set the models to be tested
-model_list=['rf', 'svm', 'gb', 'nn', 'nn-pca', 'gb-30'] #
+model_list=['rf', 'svm', 'gb', 'nn', 'nn-pca'] #
 
 #creating results folder
 if not os.path.exists(result_path+save_model_name+'/'):

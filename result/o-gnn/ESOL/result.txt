@@ -1,0 +1,4 @@
+data(seed)-best valid/test MAE,ESOL, 15213,                    0.6122696995735168, 0.49475497007369995
+data(seed)-best valid/test MAE,ESOL, 15213,                    0.5842087268829346, 0.527603805065155
+data(seed)-best valid/test MAE,ESOL, 15213,                    0.5824808478355408, 0.43953630328178406
+data(seed)-best valid/test MAE,ESOL, 15213,                    0.5780333876609802, 0.4061638414859772
