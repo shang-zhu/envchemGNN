@@ -137,26 +137,6 @@ python run.py --random_seed 15213 \
 which has 7 columns, including idx(test set indexs from original dataset), y_true (true labels) and y_pred_[0-4] from an esemble of 5 models.
 Then you can average the prediction of model ensembles and compare the predictions with true labels, get RMSE or other metrics. A small stochasticity was observed during model training, which didn't influence the qualitative conclusions.
 
-3. Extract the features after graph pooling layer:
-```
-result_path='your_local_dir/envchemGNN/result/'
-data_path='your_local_dir/envchemGNN/data/o_gnn_input/'
-task='Clint'
-model_path=$result_path$task'OGNN/model_k4_n0.pt'
-
-#in the get_feature.py we set ddi=True in order to extract graph features
-python get_feature.py --random_seed 15213 \
-        --input_path $data_path \
-        --input_csv_name $task --gnn 'dualgraph2' \
-        --save-test True \
-        --batch-size 32 \
-        --dropout 0.0 --pooler-dropout 0.0 \
-        --init-face --use-bn --num-layers 5 --lr 0.0003 \
-        --weight-decay 0.1 --beta2 0.999 --num-workers 1 \
-        --mlp-hidden-size 256 --lr-warmup \
-        --use-adamw --node-attn --period 25 --checkpoint-dir $model_path
-```
-
 ## Acknowledgement
 
 Duvenaud, D. K., et al. (2015). Convolutional Networks on Graphs for Learning Molecular Fingerprints. In C. Cortes, N. Lawrence, D. Lee, M. Sugiyama, & R. Garnett (Eds.), Advances in Neural Information Processing Systems (Vol. 28).
