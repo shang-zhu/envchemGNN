@@ -96,7 +96,7 @@ python run.py --folder_idx $split_id --data_path $data_path'random_split/'$task'
 2. prediction results are saved at (5 files from an ensemble of 5 models): 
 ```$result_path'neuralFP/'$task'NeuralFP/preds_'+str(split_id)+'.csv'```
 which has 7 columns, including idx(test set indexs from original dataset), y_true (true labels) and y_pred_[0-4] from an esemble of 5 models.
-Then you can average the prediction of model ensembles and compare the predictions with true labels, get RMSE or other metrics.
+Then you can average the prediction of model ensembles and compare the predictions with true labels, get RMSE or other metrics. A small stochasticity was observed during model training, which didn't influence the qualitative conclusions.
 
 3. optimized hyperparameters for other tasks:
 
@@ -135,7 +135,7 @@ python run.py --random_seed 15213 \
 2.  prediction results are saved at : 
 ```$result_path'o-gnn/'$task'/preds_'+str(split_id)+'.csv'```
 which has 7 columns, including idx(test set indexs from original dataset), y_true (true labels) and y_pred_[0-4] from an esemble of 5 models.
-Then you can average the prediction of model ensembles and compare the predictions with true labels, get RMSE or other metrics.
+Then you can average the prediction of model ensembles and compare the predictions with true labels, get RMSE or other metrics. A small stochasticity was observed during model training, which didn't influence the qualitative conclusions.
 
 3. Extract the features after graph pooling layer:
 ```

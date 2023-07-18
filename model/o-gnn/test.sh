@@ -8,8 +8,8 @@
 #SBATCH -A cts180021p              # Partition to submit to #gpu
 #SBATCH -p GPU-small    # RM-shared
 #SBATCH --mem=32000      # Memory pool for all cores in GB (see also --mem-per-cpu
-#SBATCH -e regress_esol_%j.err
-#SBATCH -o regress_esol_%j.out # File to which STDOUT will be written %j is the job #
+#SBATCH -e regress_esol.err
+#SBATCH -o regress_esol.out # File to which STDOUT will be written %j is the job #
 #SBATCH --mail-type=END # Type of email notification- BEGIN,END,FAIL,ALL
 #SBATCH --mail-user=shangzhu@andrew.cmu.edu # Email to which notifications will be sent
 
