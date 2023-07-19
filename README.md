@@ -39,7 +39,6 @@ conda install -c rdkit rdkit
 pip install -U scikit-learn 
 conda install -c rdkit -c mordred-descriptor mordred
 pip install --pre deepchem[tensorflow]
-<!-- pip install torch torchvision torchaudio torch_geometric -->
 
 #other packages for data analysis
 pip install pandas matplotlib
@@ -47,7 +46,7 @@ pip install pandas matplotlib
 
 ### Dataset
 
-Curated datasets can be found at 'envchemGNN/data': need to check the data policy
+Curated datasets can be found at './data': need to check the data policy
 folder structures:
 ```
 data
@@ -68,9 +67,9 @@ data
 
 1. run the following commands in your terminal
 ```
-cd ./envchemGNN/model/feature-based
-data_path='./envchemGNN/data/'
-result_path='./envchemGNN/result/feature_based/'
+cd ./model/feature-based
+data_path='./data/'
+result_path='./result/feature_based/'
 task='ESOL' # other tasks: 'BCF' 'Clint'
 
 #create features
@@ -92,9 +91,9 @@ python run.py --feat_path $data_path'features/'$task'/' \
 
 1. run the following commands in your terminal
 ```
-cd ./envchemGNN/model/deepchem/
-result_path='./envchemGNN/result/'
-data_path='./envchemGNN/data/'
+cd ./deepchem/
+result_path='./result/'
+data_path='./data/'
 task='ESOL'
 split_id=0 # will run id=1,2,3,4 for cross validation
 
@@ -119,9 +118,9 @@ Then you can average the prediction of model ensembles and compare the predictio
 ### Train a O-GNN model
 1. run the following command in your terminal
 ```
-cd ./envchemGNN/model/o-gnn
-result_path='./envchemGNN/result/'
-data_path='./envchemGNN/data/o_gnn_input/'
+cd ./model/o-gnn
+result_path='./result/'
+data_path='./data/o_gnn_input/'
 task='ESOL'
 split_id=0 # will run id=1,2,3,4 for cross validation
 N_epoch=200 #400 for BCF and SO4
@@ -148,6 +147,15 @@ Then you can average the prediction of model ensembles and compare the predictio
 
 ## Acknowledgement
 
+### Model Implementations:
+
 Duvenaud, D. K., et al. (2015). Convolutional Networks on Graphs for Learning Molecular Fingerprints. In C. Cortes, N. Lawrence, D. Lee, M. Sugiyama, & R. Garnett (Eds.), Advances in Neural Information Processing Systems (Vol. 28).
 
 Zhu, J., et al. (2023). \${\textbackslash}mathcal{O}$-{GNN}: incorporating ring priors into molecular modeling. The Eleventh International Conference on Learning Representations.
+
+### Data Sources:
+
+ESOL: Delaney, J. S. (2004). Journal of Chemical Information and Computer Sciences, 44(3), 1000–1005. [link](https://doi.org/10.1021/ci034243x)
+BCF: Grisoni, F., et al. (2015). Chemosphere, 127, 171–179.  [link](https://doi.org/https://doi.org/10.1016/j.chemosphere.2015.01.047)
+Clint: Dawson, D. E., et al. (2021). Environmental Science & Technology, 55(9), 6505–6517. [link](https://doi.org/10.1021/acs.est.0c06117)
+O3/SO4: Zhong, S., et al. (2022). Environmental Science & Technology, 56(1), 681–692. [link](https://doi.org/10.1021/acs.est.1c04883)
