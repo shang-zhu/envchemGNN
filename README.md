@@ -157,7 +157,7 @@ Zhu, J., et al. (2023). \${\textbackslash}mathcal{O}$-{GNN}: incorporating ring 
 
 ESOL: Delaney, J. S. (2004). Journal of Chemical Information and Computer Sciences, 44(3), 1000–1005. [link](https://doi.org/10.1021/ci034243x)
 
-BCF: Grisoni, F., et al. (2015). Chemosphere, 127, 171–179.  [link](https://doi.org/https://doi.org/10.1016/j.chemosphere.2015.01.047)
+BCF: Grisoni, F., et al. (2015). Chemosphere, 127, 171–179.  [\[link\]](https://doi.org/https://doi.org/10.1016/j.chemosphere.2015.01.047)
 
 Clint: Dawson, D. E., et al. (2021). Environmental Science & Technology, 55(9), 6505–6517. [link](https://doi.org/10.1021/acs.est.0c06117)
 
