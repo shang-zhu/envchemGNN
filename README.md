@@ -7,6 +7,13 @@ The implementation of NeuralFP is from [DeepChem](https://deepchem.io/) and the 
 ## Getting Started
 
 ### Installation
+You can install packages by creating an environment with the provided yaml file
+
+```
+conda env create -f environment.yml
+```
+
+Alternatively, you can install pakcages manually with the following instructions
 
 ```
 #create conda environment
@@ -58,9 +65,9 @@ data
 
 1. run the following commands in your terminal
 ```
-cd $your_local_dir'/envchemGNN/model/feature-based'
-data_path=$your_local_dir'/envchemGNN/data/'
-result_path=$your_local_dir'/envchemGNN/result/feature_based/'
+cd ./envchemGNN/model/feature-based
+data_path='./envchemGNN/data/'
+result_path='./envchemGNN/result/feature_based/'
 task='ESOL' # other tasks: 'BCF' 'Clint'
 
 #create features
@@ -82,9 +89,9 @@ python run.py --feat_path $data_path'features/'$task'/' \
 
 1. run the following commands in your terminal
 ```
-cd $your_local_dir'/envchemGNN/model/deepchem/'
-result_path=$your_local_dir'/envchemGNN/result/'
-data_path=$your_local_dir'/envchemGNN/data/'
+cd ./envchemGNN/model/deepchem/
+result_path='./envchemGNN/result/'
+data_path='./envchemGNN/data/'
 task='ESOL'
 split_id=0 # will run id=1,2,3,4 for cross validation
 
@@ -109,9 +116,9 @@ Then you can average the prediction of model ensembles and compare the predictio
 ### Train a O-GNN model
 1. run the following command in your terminal
 ```
-cd $your_local_dir'/envchemGNN/model/o-gnn'
-result_path=$your_local_dir'/envchemGNN/result/'
-data_path=$your_local_dir'/envchemGNN/data/o_gnn_input/'
+cd ./envchemGNN/model/o-gnn
+result_path='./envchemGNN/result/'
+data_path='./envchemGNN/data/o_gnn_input/'
 task='ESOL'
 split_id=0 # will run id=1,2,3,4 for cross validation
 N_epoch=200 #400 for BCF and SO4
