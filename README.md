@@ -14,19 +14,18 @@ conda create --name ecgnn python=3.7
 conda activate ecgnn2
 
 #install packages for model training
+#ognn
+conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+conda install pyg -c pyg
+conda install pytorch-scatter pytorch-sparse -c pyg -c pytorch -c nvidia -c conda-forge
+pip install ogb==1.3.5
+pip install tensorboard
+conda install -c rdkit rdkit
+#feature-based, deepchem
 pip install -U scikit-learn 
 conda install -c rdkit -c mordred-descriptor mordred
 pip install --pre deepchem[tensorflow]
 <!-- pip install torch torchvision torchaudio torch_geometric -->
-
-conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
-conda install pyg -c pyg
-conda install pytorch-scatter pytorch-sparse -c pyg -c pytorch -c nvidia -c conda-forge
-#pytorch-sparse 
-pip install ogb
-pip install tensorboard
-conda install -c rdkit rdkit
-
 
 #other packages for data analysis
 pip install pandas matplotlib
@@ -74,7 +73,7 @@ python run.py --feat_path $data_path'features/'$task'/' \
     --task 'regression' --metric 'RMSE' --save_model --result_path $result_path
 ```
 
-2. The testing results are saved at $result_path/$csv_name/summary_kfold.csv for further analysis, along with the training-validation-testing-split indexes, and saved models. Notice that validation set is not necessary for the feature-based models except for Neural-networks, the validation-idx is empty.
+2. The testing results are saved at ```$result_path/$csv_name/summary_kfold.csv``` for further analysis, along with the training-validation-testing-split indexes, and saved models. Notice that validation set is not necessary for the feature-based models except for Neural-networks, the validation-idx is empty.
 
 3. We observed a small stochasticity of model training, which didn't influence the model selection results.
 
