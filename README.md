@@ -149,11 +149,11 @@ Then you can average the prediction of model ensembles and compare the predictio
 
 ### Graph-based Models:
 
-NeuralFP: Duvenaud, D. K., et al. (2015). Advances in Neural Information Processing Systems (Vol. 28). [\[link\]](https://arxiv.org/abs/1509.09292)
+Duvenaud, D. K., et al. (2015). Advances in Neural Information Processing Systems (Vol. 28). [\[link\]](https://arxiv.org/abs/1509.09292)
 
-DeepChem Implementation of NeuralFP: Ramsundar, B., et al. (2019). Deep Learning for the Life Sciences. O’Reilly Media. [\[DeepChem link\]](https://deepchem.io/)
+Ramsundar, B., et al. (2019). Deep Learning for the Life Sciences. O’Reilly Media. [\[DeepChem link\]](https://deepchem.io/)
 
-O-GNN: Zhu, J., et al. (2023). The Eleventh International Conference on Learning Representations. [\[link\]](https://openreview.net/forum?id=5cFfz6yMVPU)
+Zhu, J., et al. (2023). The Eleventh International Conference on Learning Representations. [\[link\]](https://openreview.net/forum?id=5cFfz6yMVPU)
 
 ### Data Sources:
 
