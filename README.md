@@ -7,7 +7,14 @@ The implementation of NeuralFP is from [DeepChem](https://deepchem.io/) and the 
 ## Getting Started
 
 ### Installation
-You can install packages by creating an environment with the provided yaml file
+First, clone the github repository:
+
+```
+git clone https://github.com/shangzhu-cmu/envchemGNN.git
+cd envchemGNN
+```
+
+You can then install packages by creating an environment with the provided yaml file
 
 ```
 conda env create -f environment.yml
@@ -18,7 +25,7 @@ Alternatively, you can install pakcages manually with the following instructions
 ```
 #create conda environment
 conda create --name ecgnn python=3.7
-conda activate ecgnn2
+conda activate ecgnn
 
 #install packages for model training
 #ognn
@@ -36,10 +43,6 @@ pip install --pre deepchem[tensorflow]
 
 #other packages for data analysis
 pip install pandas matplotlib
-
-#clone this folder
-git clone https://github.com/shangzhu-cmu/envchemGNN.git
-cd envchemGNN
 ```
 
 ### Dataset
