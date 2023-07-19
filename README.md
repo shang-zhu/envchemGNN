@@ -147,18 +147,20 @@ Then you can average the prediction of model ensembles and compare the predictio
 
 ## Acknowledgement
 
-### Model Implementations:
+### Graph-based Models:
 
-Duvenaud, D. K., et al. (2015). Convolutional Networks on Graphs for Learning Molecular Fingerprints. In C. Cortes, N. Lawrence, D. Lee, M. Sugiyama, & R. Garnett (Eds.), Advances in Neural Information Processing Systems (Vol. 28).
+NeuralFP: Duvenaud, D. K., et al. (2015). Advances in Neural Information Processing Systems (Vol. 28). [\[link\]](https://arxiv.org/abs/1509.09292)
 
-Zhu, J., et al. (2023). \${\textbackslash}mathcal{O}$-{GNN}: incorporating ring priors into molecular modeling. The Eleventh International Conference on Learning Representations.
+DeepChem Implementation of NeuralFP: Ramsundar, B., et al. (2019). Deep Learning for the Life Sciences. O’Reilly Media. [\[DeepChem link\]](https://deepchem.io/)
+
+O-GNN: Zhu, J., et al. (2023). The Eleventh International Conference on Learning Representations. [\[link\]](https://openreview.net/forum?id=5cFfz6yMVPU)
 
 ### Data Sources:
 
-ESOL: Delaney, J. S. (2004). Journal of Chemical Information and Computer Sciences, 44(3), 1000–1005. [link](https://doi.org/10.1021/ci034243x)
+ESOL: Delaney, J. S. (2004). Journal of Chemical Information and Computer Sciences, 44(3), 1000–1005. [\[link\]](https://doi.org/10.1021/ci034243x)
 
 BCF: Grisoni, F., et al. (2015). Chemosphere, 127, 171–179.  [\[link\]](https://doi.org/https://doi.org/10.1016/j.chemosphere.2015.01.047)
 
-Clint: Dawson, D. E., et al. (2021). Environmental Science & Technology, 55(9), 6505–6517. [link](https://doi.org/10.1021/acs.est.0c06117)
+Clint: Dawson, D. E., et al. (2021). Environmental Science & Technology, 55(9), 6505–6517. [\[link\]](https://doi.org/10.1021/acs.est.0c06117)
 
-O3/SO4: Zhong, S., et al. (2022). Environmental Science & Technology, 56(1), 681–692. [link](https://doi.org/10.1021/acs.est.1c04883)
+O3/SO4: Zhong, S., et al. (2022). Environmental Science & Technology, 56(1), 681–692. [\[link\]](https://doi.org/10.1021/acs.est.1c04883)
